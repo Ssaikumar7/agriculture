@@ -1,0 +1,56 @@
+.home-body{
+    background-image: url('./images/bg2.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+   
+    
+} 
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    color: white;
+    height: 20px;
+    animation: ease-in;
+    animation-duration: 1000ms;
+}
+.nav-link{
+    margin-right: 20px;
+   /* background-color: green  */
+}
+
+.nav-link:hover{
+    font-size: larger;
+    
+
+}
+
+.nav-link a{
+    color: aliceblue;
+}
+
+.All{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.images {
+    display: flex;
+    flex-direction: column; /* Flex column in mobile only */
+}
+
+/* Landscape tablets and desktops */
+@media (min-width: 768px) {
+    .images {
+        flex-direction: row; /* Flex row in larger screens */
+    }
+}
+.images img{
+    width: 300px;
+    margin: 4px;
+    border: black 2px solid;
+    border-radius: 5px;
+}
+.images img:hover{
+    border: red 2px solid;
+}
+
